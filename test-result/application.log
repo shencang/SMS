@@ -1,0 +1,9 @@
+03 12月 2018 22:33:27,623 INFO  ~ Starting D:\work_data\java_play\SMS\.
+03 12月 2018 22:33:28,165 INFO  ~ Module docviewer is available (D:\soft_work\play-1.5.1\modules\docviewer)
+03 12月 2018 22:33:28,166 INFO  ~ Module crud is available (D:\soft_work\play-1.5.1\modules\crud)
+03 12月 2018 22:33:29,674 WARN  ~ You're running Play! in DEV mode
+03 12月 2018 22:33:30,784 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+03 12月 2018 22:33:39,986 INFO  ~ HikariPool-1 - Starting...
+03 12月 2018 22:33:40,014 INFO  ~ HikariPool-1 - Start completed.
+03 12月 2018 22:33:40,032 INFO  ~ Connected to jdbc:h2:mem:play for default
+03 12月 2018 22:33:41,056 INFO  ~ Application 'SMS' is now started !
