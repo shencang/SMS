@@ -5,6 +5,9 @@
 # Home page
 GET     /                                       Application.index
 *       /admin                                  module:crud
+*       /stlist                                 Students.list
+*       /telist                                 Teachers.list
+*       /
 
 
 # Ignore favicon requests
@@ -12,6 +15,7 @@ GET     /favicon.ico                            404
 
 # Map static resources from the /app/public folder to the /public path
 GET     /public/                                staticDir:public
-
+GET     /assets/                                  staticDir:tags/hello/assets
+GET     /images/                                  staticDir:tags/hello/images
 # Catch all
 *       /{controller}/{action}                  {controller}.{action}

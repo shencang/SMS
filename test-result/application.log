@@ -1,10 +1,67 @@
-07 12月 2018 20:08:25,817 INFO  ~ Starting D:\work_data\java_play\SMS\.
-07 12月 2018 20:08:26,252 INFO  ~ Module docviewer is available (D:\soft_work\play-1.5.1\modules\docviewer)
-07 12月 2018 20:08:26,253 INFO  ~ Module crud is available (D:\soft_work\play-1.5.1\modules\crud)
-07 12月 2018 20:08:26,254 INFO  ~ Module secure is available (D:\soft_work\play-1.5.1\modules\secure)
-07 12月 2018 20:08:27,155 WARN  ~ You're running Play! in DEV mode
-07 12月 2018 20:08:28,924 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
-07 12月 2018 20:08:34,596 INFO  ~ HikariPool-1 - Starting...
-07 12月 2018 20:08:34,617 INFO  ~ HikariPool-1 - Start completed.
-07 12月 2018 20:08:34,635 INFO  ~ Connected to jdbc:h2:mem:play for default
-07 12月 2018 20:08:35,749 INFO  ~ Application 'SMS' is now started !
+07 12月 2018 22:22:17,286 INFO  ~ Starting D:\work_data\java_play\SMS\.
+07 12月 2018 22:22:17,722 INFO  ~ Module docviewer is available (D:\soft_work\play-1.5.1\modules\docviewer)
+07 12月 2018 22:22:17,723 INFO  ~ Module crud is available (D:\soft_work\play-1.5.1\modules\crud)
+07 12月 2018 22:22:17,723 INFO  ~ Module secure is available (D:\soft_work\play-1.5.1\modules\secure)
+07 12月 2018 22:22:18,505 WARN  ~ You're running Play! in DEV mode
+07 12月 2018 22:22:19,812 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+07 12月 2018 22:22:24,210 ERROR ~ Invalid route definition : * /
+07 12月 2018 22:22:24,633 INFO  ~ HikariPool-1 - Starting...
+07 12月 2018 22:22:24,656 INFO  ~ HikariPool-1 - Start completed.
+07 12月 2018 22:22:24,674 INFO  ~ Connected to jdbc:h2:mem:play for default
+07 12月 2018 22:22:25,809 INFO  ~ Application 'SMS' is now started !
+07 12月 2018 22:22:26,125 ERROR ~ 
+
+@7a6jcf64k
+images.pic03.jpg action not found
+
+Action not found
+Action images.pic03.jpg could not be found. Error raised is Controller controllers.images.pic03 not found
+
+play.exceptions.ActionNotFoundException: Action images.pic03.jpg not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:585)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:71)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.images.pic03 not found
+	... 3 more
+07 12月 2018 22:22:26,206 ERROR ~ 
+
+@7a6jcf64l
+images.pic01.jpg action not found
+
+Action not found
+Action images.pic01.jpg could not be found. Error raised is Controller controllers.images.pic01 not found
+
+play.exceptions.ActionNotFoundException: Action images.pic01.jpg not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:585)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:71)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.images.pic01 not found
+	... 3 more
+07 12月 2018 22:22:26,230 ERROR ~ 
+
+@7a6jcf64m
+images.pic04.jpg action not found
+
+Action not found
+Action images.pic04.jpg could not be found. Error raised is Controller controllers.images.pic04 not found
+
+play.exceptions.ActionNotFoundException: Action images.pic04.jpg not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:585)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:71)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.images.pic04 not found
+	... 3 more
+07 12月 2018 22:22:26,362 ERROR ~ 
+
+@7a6jcf64n
+images.pic02.jpg action not found
+
+Action not found
+Action images.pic02.jpg could not be found. Error raised is Controller controllers.images.pic02 not found
+
+play.exceptions.ActionNotFoundException: Action images.pic02.jpg not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:585)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:71)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: Controller controllers.images.pic02 not found
+	... 3 more
