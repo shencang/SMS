@@ -1,3 +1,20 @@
 # You can specialize this file for each language.
 # For example, for French create a messages.fr file
 #
+stu_id = 学号
+tea_id = 工号
+name   = 姓名
+phone_number = 电话号码
+position  = ְ职称
+password  = 密码
+isAdmin   = 是否是管理员
+email     = 电子邮件
+grade     = 年级
+crud.save = 保存
+crud.saveAndContinue = 保存并继续
+crud.saveAndAddAnother = 保存并添加下一个
+crAdministration = 管理系统
+Student =学生
+Students = 学生
+Teacher =教师
+Teachers = 教师

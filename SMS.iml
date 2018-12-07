@@ -53,5 +53,6 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="library" name="play_http_help_libs" level="application" />
   </component>
 </module>
