@@ -1,0 +1,10 @@
+#{extends 'CRUD/layout.html' /}
+
+<h1>&{'modifybatchRegistration.title'} ${student}</h1>
+
+#{list items:stu, as:'stu'}
+<p class="stu">
+    学号:<p style="color:#c00"> ${stu.stu_id}&nbsp&nbsp
+</p>
+#{/list}
+初始密码均为：<p style="color:#c00"> ${stu.password}</p>

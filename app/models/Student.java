@@ -17,15 +17,14 @@ public class Student extends Model {
     @MaxSize(11)
     public String stu_id;
 
-    @Required
     @MaxSize(8)
     public String name;
 
-    @Required
     @MaxSize(11)
     public String phone_number;
     @MaxSize(8)
     public String grade;
+
     @Required
     @Password
     public String password;
@@ -33,7 +32,7 @@ public class Student extends Model {
     public String email;
 
     public boolean isAdmin;
-    @Required
+
     @ManyToOne
     public Teacher myTeacher;
 

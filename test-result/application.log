@@ -8,3 +8,7 @@
 08 12月 2018 12:14:57,334 INFO  ~ HikariPool-1 - Start completed.
 08 12月 2018 12:14:57,348 INFO  ~ Connected to jdbc:h2:mem:play for default
 08 12月 2018 12:14:58,373 INFO  ~ Application 'SMS' is now started !
+08 12月 2018 12:15:55,338 INFO  ~ Restart: 1 classes changed (and HotSwap is not enabled)
+08 12月 2018 12:21:06,964 INFO  ~ Restart: 2 classes changed (and HotSwap is not enabled)
+08 12月 2018 13:06:47,771 INFO  ~ Restart: 2 classes changed (and HotSwap is not enabled)
+08 12月 2018 13:07:27,511 INFO  ~ Restart: 1 classes changed (and HotSwap is not enabled)

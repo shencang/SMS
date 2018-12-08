@@ -1,0 +1,25 @@
+#{extends 'CRUD/layout.html' /}
+<h1>&{'modifybatchRegistration.title'} ${student}</h1>
+
+#{if flash.error} 
+<p style="color:#c00"> ${flash.error} </p> 
+#{/if} 
+
+#{form @doModifybatchRegistration(), enctype:'multipart/form-data'}
+
+<div class="crudField crud_student" >
+
+        <label for="studentnum">&{'student_num'}</label>
+        <input id="studentnum" type="number" name="number" value="${number}" /> 
+        <span class="crudHelp"></span>
+</div>
+<div class="crudField crud_student">
+        <label for="classnum">&{'class_num'}</label>
+        <input id="classnum" type="number" name="classnum" value="${classnum}" /> 
+        <span class="crudHelp"></span>
+</div>
+   
+        <p class="buttons">
+                    <input type="submit" name="_save" value="&{'modifybatchRegistration.save'}" />
+            </p>
+#{/form} 
