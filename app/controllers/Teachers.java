@@ -1,5 +1,6 @@
 package controllers;
 
+import models.OtherTeacher;
 import models.Student;
 import models.Teacher;
 import play.mvc.With;
@@ -47,4 +48,27 @@ public class Teachers  extends  CRUD{
         }
         return stu_ids;
     }
+
+    public static void register(){
+
+        render();
+    }
+    public static void registerOther(String id ,String userPassword ,
+                                     String userPhone,String username,
+                                     String userEmail){
+        System.out.println(id);
+        System.out.println(userPassword);
+        System.out.println(userPhone);
+        System.out.println(username);
+        System.out.println(userEmail);
+        if(id!=null&&userPassword!=null&&username!=null&&userPhone!=null&&userEmail!=null){
+            OtherTeacher otherTeacher= new OtherTeacher(id,username,userPhone,"",userPassword,userEmail).save();
+            System.out.println(id);
+
+
+        }
+    }
+
+
+
 }

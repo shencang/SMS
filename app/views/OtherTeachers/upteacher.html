@@ -1,0 +1,25 @@
+#{extends 'CRUD/layout.html' /}
+<h1>&{'OtherTeachers_update.title'} ${student}</h1>
+
+#{if flash.error} 
+<p style="color:#c00"> ${flash.error} </p> 
+#{/if} 
+
+#{form @doupteacher(), enctype:'multipart/form-data'}
+
+<div class="crudField crud_student" hidden>
+
+        <label for="studentid">&{'OtherTeachers_update.id'}</label>
+        <input id="studentid" type="text" name="object.tea_id" value="${object.tea_id}" /> 
+        <span class="crudHelp"></span>
+</div>
+<div class="crudField crud_student">
+        <label for="studentname">&{'OtherTeachers_update.name'}</label>
+        <input id="studentname" type="text" name="object.name" value="${object.name}" /> 
+        <span class="crudHelp"></span>
+</div>
+   
+        <p class="buttons">
+                    <input type="submit" name="_save" value="&{'OtherTeachers_update.save'}" />
+            </p>
+#{/form} 

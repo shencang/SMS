@@ -32,3 +32,7 @@ modifybatchRegistration.title= 整班添加
 student_num =学生人数
 class_num = 班级号
 modifybatchRegistration.save= 立刻添加
+OtherTeachers_update.title =教师审批操作，请输入该教师工号：
+OtherTeachers_update.name = 教师审批操作
+OtherTeachers_update.id = 该教师工号
+OtherTeachers_update.save = 执行操作

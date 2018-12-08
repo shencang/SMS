@@ -22,8 +22,6 @@ public class Application extends Controller {
 
         render(user);
     }
-    public static void register(){
-        render();
-    }
+
 
 }

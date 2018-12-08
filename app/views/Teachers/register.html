@@ -4,7 +4,7 @@
 <html lang="en">
 
 <head>
-
+#{form @registerOther(), enctype:'multipart/form-data'}
     <meta charset="UTF-8">
 
     <title>教师注册申请</title>
@@ -374,7 +374,7 @@
 
             border-radius: 5px;
 
-            background: red;
+            background: #0A65AF;
 
         }
 
@@ -408,7 +408,7 @@
 
         <div class="xiao-title-box">
 
-            <span>用户注册</span>
+            <span>教师注册申请</span>
 
         </div>
 
@@ -516,13 +516,14 @@
 
                 <input id = "xiao-submit-button" type="submit" value="提交申请">
 
+
             </div>
 
 
 
             <div class="xiao-goLogin-box">
 
-                <a href="#" style="text-decoration: none;">已有账号？去登录</a>
+                <a href="http://localhost:9000/login" style="text-decoration: none;">已有账号？去登录</a>
 
             </div>
 
@@ -535,3 +536,4 @@
 </body>
 
 </html>
+#{/form}
