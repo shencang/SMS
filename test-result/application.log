@@ -1,14 +1,10 @@
-08 12月 2018 12:14:50,482 INFO  ~ Starting D:\work_data\java_play\SMS\.
-08 12月 2018 12:14:50,831 INFO  ~ Module docviewer is available (D:\soft_work\play-1.5.1\modules\docviewer)
-08 12月 2018 12:14:50,832 INFO  ~ Module crud is available (D:\soft_work\play-1.5.1\modules\crud)
-08 12月 2018 12:14:50,832 INFO  ~ Module secure is available (D:\soft_work\play-1.5.1\modules\secure)
-08 12月 2018 12:14:51,493 WARN  ~ You're running Play! in DEV mode
-08 12月 2018 12:14:52,753 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
-08 12月 2018 12:14:57,314 INFO  ~ HikariPool-1 - Starting...
-08 12月 2018 12:14:57,334 INFO  ~ HikariPool-1 - Start completed.
-08 12月 2018 12:14:57,348 INFO  ~ Connected to jdbc:h2:mem:play for default
-08 12月 2018 12:14:58,373 INFO  ~ Application 'SMS' is now started !
-08 12月 2018 12:15:55,338 INFO  ~ Restart: 1 classes changed (and HotSwap is not enabled)
-08 12月 2018 12:21:06,964 INFO  ~ Restart: 2 classes changed (and HotSwap is not enabled)
-08 12月 2018 13:06:47,771 INFO  ~ Restart: 2 classes changed (and HotSwap is not enabled)
-08 12月 2018 13:07:27,511 INFO  ~ Restart: 1 classes changed (and HotSwap is not enabled)
+08 12月 2018 15:17:05,121 INFO  ~ Starting D:\work_data\java_play\SMS\.
+08 12月 2018 15:17:05,524 INFO  ~ Module docviewer is available (D:\soft_work\play-1.5.1\modules\docviewer)
+08 12月 2018 15:17:05,524 INFO  ~ Module crud is available (D:\soft_work\play-1.5.1\modules\crud)
+08 12月 2018 15:17:05,525 INFO  ~ Module secure is available (D:\soft_work\play-1.5.1\modules\secure)
+08 12月 2018 15:17:06,351 WARN  ~ You're running Play! in DEV mode
+08 12月 2018 15:17:07,546 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+08 12月 2018 15:17:22,769 INFO  ~ HikariPool-1 - Starting...
+08 12月 2018 15:17:22,790 INFO  ~ HikariPool-1 - Start completed.
+08 12月 2018 15:17:22,804 INFO  ~ Connected to jdbc:h2:mem:play for default
+08 12月 2018 15:17:23,815 INFO  ~ Application 'SMS' is now started !
