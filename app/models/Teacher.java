@@ -53,6 +53,9 @@ public class Teacher extends Model {
         this.password=password;
         this.email=email;
     }
+    public static Teacher connect(String tea_id, String passawd) {
+        return find("byTea_idAndPassword",tea_id , passawd).first();
+    }
 
     @OneToMany(mappedBy = "myTeacher",cascade = CascadeType.ALL,fetch = FetchType.LAZY)
     public List<Student>students;

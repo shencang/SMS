@@ -55,4 +55,6 @@ public class Student extends Model {
         this.password=password;
         this.email=email;
     }
+
+
 }

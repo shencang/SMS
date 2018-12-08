@@ -1,4 +1,124 @@
 #{extends 'main.html' /}
 #{set title:'学生管理系统' /}
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>学生管理系统</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
 
-#{hello/index /}
+<!-- Header -->
+<header id="header" class="alt">
+    <div class="inner">
+        <h1>学生管理系统</h1>
+        <p>你好${user}。欢迎进入一个简单的学生管理系统</p>
+    #{if session.get("username")}    
+    #{/if}
+    #{else}
+        <p>登录，来使更多功能</p>
+        <div id="login">
+            <p><a href=@{Secure.login()}> &{"menu.login"}
+            </a></p></div>
+    #{/else}
+
+
+    </div>
+</header>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Banner -->
+    <section id="intro" class="main">
+        <span class="icon fa-diamond major"></span>
+        <h2>信息管理系统</h2>
+        <p>可以立刻管理学生和教师的信息。
+            前提是，你是一个管理员。</p>
+        <ul class="actions">
+            <li><a href="http://localhost:9000/admin" class="button big">立刻进入</a></li>
+        </ul>
+    </section>
+    <div class="tlinks">Collect from <a href="http://www.cssmoban.com/" >手机网站模板</a></div>
+    <!-- Items -->
+    <section class="main items">
+        <article class="item">
+            <header>
+                <a href="#"><img src="images/pic01.jpg" alt="" /></a>
+                <h3>Feugiat et faucibus</h3>
+            </header>
+            <p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
+            <ul class="actions">
+                <li><a href="#" class="button">More</a></li>
+            </ul>
+        </article>
+        <article class="item">
+            <header>
+                <a href="#"><img src="images/pic02.jpg" alt="" /></a>
+                <h3>Blandit adipiscing</h3>
+            </header>
+            <p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
+            <ul class="actions">
+                <li><a href="#" class="button">More</a></li>
+            </ul>
+        </article>
+        <article class="item">
+            <header>
+                <a href="#"><img src="images/pic03.jpg" alt="" /></a>
+                <h3>Lorem massa nulla</h3>
+            </header>
+            <p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
+            <ul class="actions">
+                <li><a href="#" class="button">More</a></li>
+            </ul>
+        </article>
+        <article class="item">
+            <header>
+                <a href="#"><img src="images/pic04.jpg" alt="" /></a>
+                <h3>Ipsum sed tempus</h3>
+            </header>
+            <p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
+            <ul class="actions">
+                <li><a href="#" class="button">More</a></li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="main special">
+        <h2>欢迎你的使用</h2>
+        <p>这次的作业还不够完善。
+            之后的学习我会继续完善功能和设计。
+            非常感谢您对我的支持。谢谢。
+            点击下方退出登录。</p>
+        <ul class="actions">
+            <li><a href=@{Secure.logout()} class="button big">退出登录</a></li>
+        </ul>
+    </section>
+
+    <!-- Main -->
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="icons">
+            <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+        <p class="copyright">Copyright &copy; 深藏blue的小站 <a href="http://www.shencangblue.com/" target="_blank" title="网站首页">网站首页</a> - 我的博客： <a href="https://github.com/shencang" title="我的GitHub" target="_blank">我的GitHub</a></p>
+    </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

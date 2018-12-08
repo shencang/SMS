@@ -12,7 +12,7 @@
 <header id="header" class="alt">
     <div class="inner">
         <h1>学生管理系统</h1>
-        <p>一个简单的学生管理系统</p>
+        <p>你好，${user}。欢迎进入一个简单的学生管理系统</p>
     </div>
 </header>
 
@@ -76,12 +76,13 @@
 
     <!-- CTA -->
     <section id="cta" class="main special">
-        <h2>Etiam veroeros lorem</h2>
-        <p>Phasellus ac augue ac magna auctor tempus proin<br />
-            accumsan lacus a nibh commodo in pellentesque dui<br />
-            in hac habitasse platea dictumst.</p>
+        <h2>欢迎你的使用</h2>
+        <p>这次的作业还不够完善。
+            之后的学习我会继续完善功能和设计。
+        非常感谢您对我的支持。谢谢。
+            点击下方退出登录。</p>
         <ul class="actions">
-            <li><a href="#" class="button big">Get Started</a></li>
+            <li><a href=@{Secure.logout()} class="button big">退出登录</a></li>
         </ul>
     </section>
 

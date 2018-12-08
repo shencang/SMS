@@ -5,9 +5,9 @@
 # Home page
 GET     /                                       Application.index
 *       /admin                                  module:crud
+*       /                                       module:secure
 *       /stlist                                 Students.list
 *       /telist                                 Teachers.list
-*       /
 
 
 # Ignore favicon requests
