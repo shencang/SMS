@@ -2,5 +2,5 @@ package controllers;
 
 import play.mvc.Controller;
 
-public class Courses extends Controller {
+public class Courses extends CRUD {
 }

@@ -9,6 +9,8 @@ GET     /                                       Application.index
 *       /stlist                                 Students.list
 *       /telist                                 Teachers.list
 *       /register                               Teachers.register
+*       /courses                                Courses.list
+*       /Students                               Teachers.list
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

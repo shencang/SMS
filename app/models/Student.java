@@ -9,6 +9,7 @@ import play.db.jpa.Model;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import java.util.List;
 
 @Entity
 public class Student extends Model {
@@ -31,10 +32,18 @@ public class Student extends Model {
     @Email
     public String email;
 
-    public boolean isAdmin;
+    @MaxSize(4)
+    public int  stu_score;
+
+    @MaxSize(10)
+    public int stu_mom;
 
     @ManyToOne
     public Teacher myTeacher;
+
+
+
+
 
     @Override
     public String toString() {
@@ -43,7 +52,7 @@ public class Student extends Model {
 
     public Student(String stu_id, String name,
                    String phone_number, String grade,
-                   String password, String email) {
+                   String password, String email,int stu_score,int stu_mom) {
 
 
         this.stu_id = stu_id;
@@ -53,6 +62,8 @@ public class Student extends Model {
         this.grade= grade;
         this.password=password;
         this.email=email;
+        this.stu_score=stu_score;
+        this.stu_mom=stu_mom;
     }
 
 
