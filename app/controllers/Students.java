@@ -5,7 +5,6 @@ import play.mvc.With;
 
 @With(Secure.class)
 @Check("studentNameModify")
-
 public class Students extends CRUD {
 
     public static void modifyName(String id){
@@ -24,6 +23,10 @@ public class Students extends CRUD {
             st.save();
             render("@modifynamedone", object);
         }
+    }
+
+    public static void  studentscenter(){
+        render();
     }
 
 

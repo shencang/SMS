@@ -22,6 +22,9 @@ public class Course extends Model {
     @MaxSize(50)
     public String remark;
 
+    @ManyToMany(cascade = CascadeType.ALL,mappedBy = "courseList",fetch = FetchType.LAZY)
+    public List<Student>studentList;
+
     @Override
     public String toString() {
         return cname;
@@ -41,6 +44,9 @@ public class Course extends Model {
 
     }
 
+    public  List<Student> getStudentList() {
+        return studentList;
+    }
 
     //@ManyToOne(mappedBy = "myTeacher",cascade = CascadeType.ALL,fetch = FetchType.LAZY)
 

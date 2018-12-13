@@ -8,9 +8,10 @@ GET     /                                       Application.index
 *       /                                       module:secure
 *       /stlist                                 Students.list
 *       /telist                                 Teachers.list
+*       /colist                                 Courses.list
 *       /register                               Teachers.register
-*       /courses                                Courses.list
-*       /Students                               Teachers.list
+*       /students                               Students.studentscenter
+*       /courses                                Courses.coursescenter
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

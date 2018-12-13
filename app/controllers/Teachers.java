@@ -64,9 +64,8 @@ public class Teachers  extends  CRUD{
         if(id!=null&&userPassword!=null&&username!=null&&userPhone!=null&&userEmail!=null){
             OtherTeacher otherTeacher= new OtherTeacher(id,username,userPhone,"",userPassword,userEmail).save();
             System.out.println(id);
-
-
         }
+        render("@over");
     }
 
 

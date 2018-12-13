@@ -6,9 +6,7 @@ import play.data.validation.Password;
 import play.data.validation.Required;
 import play.db.jpa.Model;
 
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.List;
 
 @Entity
@@ -41,6 +39,9 @@ public class Student extends Model {
     @ManyToOne
     public Teacher myTeacher;
 
+    @ManyToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @JoinTable(name = "co_id",joinColumns = @JoinColumn(name = "stu_id"),inverseJoinColumns = @JoinColumn(name = "co_id"))
+    public List<Course> courseList;
 
 
 

@@ -1,0 +1,11 @@
+#{extends 'CRUD/layout.html' /}
+#{set title:'选课管理' /}
+
+<div>选课管理</div>
+#{list items:studentList, as:'studentList'}
+<p class="studentList">
+    <a href="#">${studentList.title}</a>
+</p>
+#{/list}
+
+

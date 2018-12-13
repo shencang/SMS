@@ -1,0 +1,25 @@
+#{extends 'CRUD/layout.html' /}
+<h1>&{'course_change_name.title'} ${course}</h1>
+
+#{if flash.error} 
+<p style="color:#c00"> ${flash.error} </p> 
+#{/if} 
+
+#{form @selectcoursestudent(), enctype:'multipart/form-data'}
+
+<div class="crudField crud_student" hidden>
+
+        <label for="courseid">&{'course_change_name.id'}</label>
+        <input id="courseid" type="text" name="object.co_id" value="${object.co_id}" /> 
+        <span class="crudHelp"></span>
+</div>
+<div class="crudField crud_student">
+        <label for="coursename">&{'course_change_name.name'}</label>
+        <input id="coursename" type="text" name="object.cname" value="${object.cname}" /> 
+        <span class="crudHelp"></span>
+</div>
+   
+        <p class="buttons">
+                    <input type="submit" name="_save" value="&{'course_change_name.save'}" />
+            </p>
+#{/form} 

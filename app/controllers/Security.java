@@ -8,7 +8,7 @@ public class Security extends Secure.Security {
 
         boolean sec= username!=null&&password!=null
                 &&username.equals("root")
-                && password.equals("1");
+                && password.equals("123456789");
             session.put("currentUser", username);
             return sec;
 //        return Teacher.connect(username,password)!=null;
