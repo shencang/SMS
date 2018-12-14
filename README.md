@@ -9,7 +9,7 @@
 ### -----------------------
 #### 效果展示：
 ##### 未登录首页：
-![image](https://github.com/shencang/SMS/blob/master/runphoto/未登录首页.png)
+![image](https://github.com/shencang/SMS/blob/master/runphoto/学生管理系统首页.png)
 ##### 未学生管理页面：
 ![image](https://github.com/shencang/SMS/blob/master/runphoto/学生注册和管理.png)
 ##### 教师注册申请：
