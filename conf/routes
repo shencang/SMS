@@ -12,6 +12,8 @@ GET     /                                       Application.index
 *       /register                               Teachers.register
 *       /students                               Students.studentscenter
 *       /courses                                Courses.coursescenter
+*       /postgraduate                           PostgraduateStudents.list
+*       /undergraduate                          UndergraduateStudents.list
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
