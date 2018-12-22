@@ -10,7 +10,7 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-public class Student extends Model {
+public class UndergraduateStudent extends Model {
 
     @Required
     @MaxSize(11)
@@ -51,7 +51,7 @@ public class Student extends Model {
         return name;
     }
 
-    public Student(String stu_id, String name,
+    public UndergraduateStudent(String stu_id, String name,
                    String phone_number, String grade,
                    String password, String email,double stu_score,double stu_mom) {
 
@@ -66,6 +66,5 @@ public class Student extends Model {
         this.stu_score=stu_score;
         this.stu_mom=stu_mom;
     }
-
 
 }

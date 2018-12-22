@@ -1,122 +1,130 @@
-12 12月 2018 14:49:03,184 INFO  ~ Starting D:\work_data\java_play\SMS\.
-12 12月 2018 14:49:03,855 INFO  ~ Module docviewer is available (D:\soft_work\play-1.5.1\modules\docviewer)
-12 12月 2018 14:49:03,856 INFO  ~ Module crud is available (D:\soft_work\play-1.5.1\modules\crud)
-12 12月 2018 14:49:03,856 INFO  ~ Module secure is available (D:\soft_work\play-1.5.1\modules\secure)
-12 12月 2018 14:49:04,658 WARN  ~ You're running Play! in DEV mode
-12 12月 2018 14:49:05,454 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
-12 12月 2018 14:49:08,866 INFO  ~ HikariPool-1 - Starting...
-12 12月 2018 14:49:08,888 INFO  ~ HikariPool-1 - Start completed.
-12 12月 2018 14:49:08,904 INFO  ~ Connected to jdbc:h2:mem:play for default
-12 12月 2018 14:49:10,359 INFO  ~ Application 'SMS' is now started !
-12 12月 2018 14:50:41,999 INFO  ~ Restart: 1 classes changed (and HotSwap is not enabled)
-12 12月 2018 14:52:41,492 INFO  ~ Restart: 1 classes changed (and HotSwap is not enabled)
-12 12月 2018 14:54:23,611 ERROR ~ 
-
-@7a81enkka
-Internal Server Error (500) for request GET /courses/findcourse?id=1
-
-Template execution error (In /app/views/Courses/coursefind.html around line 13)
-Execution error occurred in template /app/views/Courses/coursefind.html. Exception raised was NullPointerException : Cannot get property 'co_id' on null object.
-
-play.exceptions.TemplateExecutionException: Cannot get property 'co_id' on null object
-	at play.templates.BaseTemplate.throwException(BaseTemplate.java:83)
-	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:307)
-	at play.templates.Template.render(Template.java:28)
-	at play.templates.GroovyTemplate.render(GroovyTemplate.java:230)
-	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:28)
-	at play.mvc.Controller.renderTemplate(Controller.java:804)
-	at play.mvc.Controller.renderTemplate(Controller.java:782)
-	at play.mvc.Controller.render(Controller.java:843)
-	at controllers.Courses.findcourse(Courses.java:20)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:543)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:480)
-	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:474)
-	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:441)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:164)
-	at Invocation.HTTP Request(Play!)
-Caused by: java.lang.NullPointerException: Cannot get property 'co_id' on null object
-	at {module:crud}/app/views/tags/crud/pagination.html.(line:24)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at play.templates.JavaExtensions.toString(JavaExtensions.java:80)
-	at play.templates.FastTags._form(FastTags.java:169)
-	at play.templates.FastTags$_form$3.call(Unknown Source)
-	at {module:crud}/app/views/tags/crud/pagination.html.(line:28)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:282)
-	... 16 more
-12 12月 2018 15:02:04,085 ERROR ~ 
-
-@7a81enkkg
-Internal Server Error (500) for request POST /courses/selectcoursestudent
-
-Execution exception (In /app/controllers/Courses.java around line 27)
-NullPointerException occurred : null
-
-play.exceptions.JavaExecutionException
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:492)
-	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:474)
-	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:441)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:164)
-	at Invocation.HTTP Request(Play!)
-Caused by: java.lang.NullPointerException
-	at controllers.Courses.selectcoursestudent(Courses.java:27)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:543)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:480)
-	... 4 more
-12 12月 2018 15:02:34,268 INFO  ~ Restart: 1 classes changed (and HotSwap is not enabled)
-12 12月 2018 15:29:47,184 ERROR ~ 
-
-@7a81enklh
-Internal Server Error (500) for request POST /otherteachers/doupteacher
-
-Execution exception (In /app/controllers/OtherTeachers.java around line 25)
-NullPointerException occurred : Try to read tea_id on null object models.OtherTeacher (controllers.OtherTeachers.doupteacher, line 25)
-
-play.exceptions.JavaExecutionException: Try to read tea_id on null object models.OtherTeacher (controllers.OtherTeachers.doupteacher, line 25)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:492)
-	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:474)
-	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:441)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:164)
-	at Invocation.HTTP Request(Play!)
-Caused by: java.lang.NullPointerException: Try to read tea_id on null object models.OtherTeacher (controllers.OtherTeachers.doupteacher, line 25)
-	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:219)
-	at controllers.OtherTeachers.doupteacher(OtherTeachers.java:25)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:543)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:480)
-	... 4 more
-12 12月 2018 15:29:51,467 ERROR ~ 
-
-@7a81enkli
-Internal Server Error (500) for request POST /otherteachers/doupteacher
-
-Execution exception (In /app/controllers/OtherTeachers.java around line 25)
-NullPointerException occurred : Try to read tea_id on null object models.OtherTeacher (controllers.OtherTeachers.doupteacher, line 25)
-
-play.exceptions.JavaExecutionException: Try to read tea_id on null object models.OtherTeacher (controllers.OtherTeachers.doupteacher, line 25)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:492)
-	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:474)
-	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:441)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:164)
-	at Invocation.HTTP Request(Play!)
-Caused by: java.lang.NullPointerException: Try to read tea_id on null object models.OtherTeacher (controllers.OtherTeachers.doupteacher, line 25)
-	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:219)
-	at controllers.OtherTeachers.doupteacher(OtherTeachers.java:25)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:543)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:480)
-	... 4 more
+22 12月 2018 11:30:09,981 INFO  ~ Starting D:\work_data\java_play\SMS\.
+22 12月 2018 11:30:10,386 INFO  ~ Module docviewer is available (D:\soft_work\play-1.5.1\modules\docviewer)
+22 12月 2018 11:30:10,387 INFO  ~ Module crud is available (D:\soft_work\play-1.5.1\modules\crud)
+22 12月 2018 11:30:10,388 INFO  ~ Module secure is available (D:\soft_work\play-1.5.1\modules\secure)
+22 12月 2018 11:30:11,168 WARN  ~ You're running Play! in DEV mode
+22 12月 2018 11:30:11,711 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+22 12月 2018 11:30:14,965 INFO  ~ HikariPool-1 - Starting...
+22 12月 2018 11:30:14,994 INFO  ~ HikariPool-1 - Start completed.
+22 12月 2018 11:30:15,005 INFO  ~ Connected to jdbc:mysql://localhost:3306/sms?serverTimezone=UTC for default
+22 12月 2018 11:30:16,148 WARN  ~ GenerationTarget encountered exception accepting command : Error executing DDL via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:144)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:309)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:452)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:889)
+	at play.db.jpa.JPAPlugin.newEntityManagerFactory(JPAPlugin.java:183)
+	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:130)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:600)
+	at play.Play.start(Play.java:557)
+	at play.Play.detectChanges(Play.java:680)
+	at play.Invoker$Invocation.init(Invoker.java:220)
+	at play.server.PlayHandler$NettyInvocation.init(PlayHandler.java:213)
+	at play.Invoker$Invocation.run(Invoker.java:312)
+	at play.server.PlayHandler$NettyInvocation.run(PlayHandler.java:252)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FKi1pw6rn5h21edy4ook58f5qx2'; check that column/key exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:790)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:675)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 27 more
+22 12月 2018 11:30:16,153 WARN  ~ GenerationTarget encountered exception accepting command : Error executing DDL via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:144)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:309)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:452)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:889)
+	at play.db.jpa.JPAPlugin.newEntityManagerFactory(JPAPlugin.java:183)
+	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:130)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:600)
+	at play.Play.start(Play.java:557)
+	at play.Play.detectChanges(Play.java:680)
+	at play.Invoker$Invocation.init(Invoker.java:220)
+	at play.server.PlayHandler$NettyInvocation.init(PlayHandler.java:213)
+	at play.Invoker$Invocation.run(Invoker.java:312)
+	at play.server.PlayHandler$NettyInvocation.run(PlayHandler.java:252)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'sms.postgraduatestudent' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:790)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:675)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 27 more
+22 12月 2018 11:30:16,206 WARN  ~ GenerationTarget encountered exception accepting command : Error executing DDL via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:144)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:309)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:452)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:889)
+	at play.db.jpa.JPAPlugin.newEntityManagerFactory(JPAPlugin.java:183)
+	at play.db.jpa.JPAPlugin.onApplicationStart(JPAPlugin.java:130)
+	at play.plugins.PluginCollection.onApplicationStart(PluginCollection.java:600)
+	at play.Play.start(Play.java:557)
+	at play.Play.detectChanges(Play.java:680)
+	at play.Invoker$Invocation.init(Invoker.java:220)
+	at play.server.PlayHandler$NettyInvocation.init(PlayHandler.java:213)
+	at play.Invoker$Invocation.run(Invoker.java:312)
+	at play.server.PlayHandler$NettyInvocation.run(PlayHandler.java:252)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:514)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'sms.undergraduatestudent' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:790)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:675)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 27 more
+22 12月 2018 11:30:19,043 INFO  ~ Application 'SMS' is now started !

@@ -54,5 +54,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="play_http_help_libs" level="application" />
+    <orderEntry type="library" name="mysql-connector-java-8.0.11" level="project" />
   </component>
 </module>
