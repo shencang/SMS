@@ -9,8 +9,7 @@
 #### python 版本:3.6
 #### MySQL 版本:8.0
 ### -------------------------------------------------------------------------------
-A web project made using the play framework. A simple student management system. Has the management function of the student teacher course. Teacher registration approval,
-     Add the whole class, login verification and other functions. A variety of management functions such as course selection management, student information, and student grade credits are realized. The interface is beautiful.
+   A web project made using the play framework. A simple student management system. Has the management function of the student teacher   course. Teacher registration approval, add the whole class, login verification and other functions. A variety of management functions such as course selection management, student information, and student grade credits are realized. The interface is beautiful.
 #### play framework version 1.5.1
 #### jdk version: 10.0
 #### python version: 3.6
