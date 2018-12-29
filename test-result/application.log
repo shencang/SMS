@@ -187,3 +187,195 @@ Caused by: java.lang.NoSuchMethodError: models.Student.<init>(Ljava/lang/String;
 	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:480)
 	... 4 more
 29 12月 2018 10:03:36,100 INFO  ~ Restart: 1 classes changed (and HotSwap is not enabled)
+29 12月 2018 10:15:00,967 INFO  ~ Restart: 4 classes changed (and HotSwap is not enabled)
+29 12月 2018 10:15:17,031 WARN  ~ SQL Error: 1054, SQLState: 42S22
+29 12月 2018 10:15:17,031 ERROR ~ Unknown column 'tea_id' in 'where clause'
+29 12月 2018 10:15:17,055 ERROR ~ 
+
+@7acjb9f8p
+Internal Server Error (500) for request POST /login
+
+Execution exception (In /app/models/Student.java around line 70)
+JPAQueryException occurred : Error while executing query from models.Student where tea_id = ?1 AND password = ?2: Unknown column 'tea_id' in 'where clause'
+
+play.exceptions.JavaExecutionException: Error while executing query <strong>from models.Student where tea_id = ?1 AND password = ?2</strong>: Unknown column 'tea_id' in 'where clause'
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:492)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:474)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:441)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:164)
+	at Invocation.HTTP Request(Play!)
+Caused by: play.db.jpa.JPABase$JPAQueryException: Error while executing query <strong>from models.Student where tea_id = ?1 AND password = ?2</strong>: Unknown column 'tea_id' in 'where clause'
+	at play.db.jpa.GenericModel$JPAQuery.first(GenericModel.java:547)
+	at models.Student.connect(Student.java:70)
+	at controllers.Security.authenticate(Security.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at play.utils.Java.invokeStaticOrParent(Java.java:168)
+	at play.utils.Java.invokeChildOrStatic(Java.java:186)
+	at controllers.Secure$Security.invoke(Secure.java:202)
+	at controllers.Secure$Security.access$0(Secure.java:199)
+	at controllers.Secure.authenticate(Secure.java:75)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:543)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:480)
+	... 4 more
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'tea_id' in 'where clause'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:960)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1019)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:71)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:2123)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1911)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1887)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:932)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:349)
+	at org.hibernate.loader.Loader.doList(Loader.java:2615)
+	at org.hibernate.loader.Loader.doList(Loader.java:2598)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2430)
+	at org.hibernate.loader.Loader.list(Loader.java:2425)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:502)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:379)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:216)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1488)
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1445)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1414)
+	at org.hibernate.query.Query.getResultList(Query.java:146)
+	at play.db.jpa.GenericModel$JPAQuery.first(GenericModel.java:541)
+	... 19 more
+29 12月 2018 10:16:20,291 INFO  ~ Restart: 3 classes changed (and HotSwap is not enabled)
+29 12月 2018 10:17:32,424 ERROR ~ 
+
+@7acjb9f93
+Internal Server Error (500) for request POST /login
+
+Execution exception (In /app/models/Student.java around line 70)
+ClassCastException occurred : models.Student cannot be cast to models.Teacher
+
+play.exceptions.JavaExecutionException: models.Student cannot be cast to models.Teacher
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:492)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:474)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:441)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:164)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.ClassCastException: models.Student cannot be cast to models.Teacher
+	at models.Student.connect(Student.java:70)
+	at controllers.Security.authenticate(Security.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at play.utils.Java.invokeStaticOrParent(Java.java:168)
+	at play.utils.Java.invokeChildOrStatic(Java.java:186)
+	at controllers.Secure$Security.invoke(Secure.java:202)
+	at controllers.Secure$Security.access$0(Secure.java:199)
+	at controllers.Secure.authenticate(Secure.java:75)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:543)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:480)
+	... 4 more
+29 12月 2018 10:18:08,800 INFO  ~ Restart: 3 classes changed (and HotSwap is not enabled)
+29 12月 2018 10:18:12,820 ERROR ~ 
+
+@7acjb9f94
+Internal Server Error (500) for request POST /login
+
+Execution exception (In /app/controllers/Security.java around line 21)
+NoSuchMethodError occurred : models.Student.connect(Ljava/lang/String;Ljava/lang/String;)Lmodels/Teacher;
+
+play.exceptions.JavaExecutionException: models.Student.connect(Ljava/lang/String;Ljava/lang/String;)Lmodels/Teacher;
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:492)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:474)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:441)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:164)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NoSuchMethodError: models.Student.connect(Ljava/lang/String;Ljava/lang/String;)Lmodels/Teacher;
+	at controllers.Security.authenticate(Security.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at play.utils.Java.invokeStaticOrParent(Java.java:168)
+	at play.utils.Java.invokeChildOrStatic(Java.java:186)
+	at controllers.Secure$Security.invoke(Secure.java:202)
+	at controllers.Secure$Security.access$0(Secure.java:199)
+	at controllers.Secure.authenticate(Secure.java:75)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:543)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:480)
+	... 4 more
+29 12月 2018 10:18:54,832 ERROR ~ 
+
+@7acjb9f95
+Internal Server Error (500) for request POST /login
+
+Execution exception (In /app/controllers/Security.java around line 21)
+NoSuchMethodError occurred : models.Student.connect(Ljava/lang/String;Ljava/lang/String;)Lmodels/Teacher;
+
+play.exceptions.JavaExecutionException: models.Student.connect(Ljava/lang/String;Ljava/lang/String;)Lmodels/Teacher;
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:492)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:474)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:441)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:164)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NoSuchMethodError: models.Student.connect(Ljava/lang/String;Ljava/lang/String;)Lmodels/Teacher;
+	at controllers.Security.authenticate(Security.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at play.utils.Java.invokeStaticOrParent(Java.java:168)
+	at play.utils.Java.invokeChildOrStatic(Java.java:186)
+	at controllers.Secure$Security.invoke(Secure.java:202)
+	at controllers.Secure$Security.access$0(Secure.java:199)
+	at controllers.Secure.authenticate(Secure.java:75)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:543)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:480)
+	... 4 more
+29 12月 2018 10:20:27,552 INFO  ~ Restart: 1 classes changed (and HotSwap is not enabled)
+29 12月 2018 10:37:41,127 INFO  ~ Restart: 1 classes changed (and HotSwap is not enabled)
+29 12月 2018 10:38:12,253 ERROR ~ 
+
+@7acjb9f9a
+Internal Server Error (500) for request POST /login
+
+Execution exception (In /app/controllers/Security.java around line 22)
+NullPointerException occurred : Try to read tea_id on null object models.Teacher (controllers.Security.authenticate, line 22)
+
+play.exceptions.JavaExecutionException: Try to read tea_id on null object models.Teacher (controllers.Security.authenticate, line 22)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:492)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:474)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:441)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:164)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Try to read tea_id on null object models.Teacher (controllers.Security.authenticate, line 22)
+	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:219)
+	at controllers.Security.authenticate(Security.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at play.utils.Java.invokeStaticOrParent(Java.java:168)
+	at play.utils.Java.invokeChildOrStatic(Java.java:186)
+	at controllers.Secure$Security.invoke(Secure.java:202)
+	at controllers.Secure$Security.access$0(Secure.java:199)
+	at controllers.Secure.authenticate(Secure.java:75)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:543)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:480)
+	... 4 more
+29 12月 2018 10:39:24,324 INFO  ~ Restart: 1 classes changed (and HotSwap is not enabled)
+29 12月 2018 10:42:00,685 INFO  ~ Restart: 1 classes changed (and HotSwap is not enabled)
+29 12月 2018 10:46:32,232 INFO  ~ Restart: 1 classes changed (and HotSwap is not enabled)
+29 12月 2018 11:01:48,382 INFO  ~ Restart: 3 classes changed (and HotSwap is not enabled)
