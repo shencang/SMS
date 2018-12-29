@@ -28,6 +28,7 @@ public class Teachers  extends  CRUD{
             }
             Student[] st = new Student[number+1];
             for (int i =1;i<stuList.length;i++){
+                System.out.println(stuList[i]);
                 stu.add(new Student(stuList[i],"","","","123456","",0,0).save());
             }
             render("@batchRegistrationDone",stu );

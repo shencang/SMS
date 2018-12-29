@@ -11,15 +11,15 @@ import java.util.List;
 public class Course extends Model {
 
     @Required
-    @MaxSize(12)
+    @MaxSize(value = 12,message = "value_max_12")
     public String co_id;
-    @MaxSize(20)
+    @MaxSize(value = 20,message = "value_max_20")
     public String cname;
 
     public String isteacher;
-    @MaxSize(15)
+    @MaxSize(value = 15,message = "value_max_15")
     public String ctime;
-    @MaxSize(50)
+    @MaxSize(value = 50,message = "value_max_50")
     public String remark;
 
     @ManyToMany(cascade = CascadeType.ALL,mappedBy = "courseList",fetch = FetchType.LAZY)

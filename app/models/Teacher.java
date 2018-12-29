@@ -16,15 +16,15 @@ import java.util.List;
 public class Teacher extends Model {
 
     @Required
-    @MaxSize(12)
+    @MaxSize(value = 12,message = "value_max_12")
     public String tea_id;
     @Required
-    @MaxSize(8)
+    @MaxSize(value = 8,message = "value_max_8")
     public String name;
     @Required
-    @MaxSize(11)
+    @MaxSize(value = 11,message = "value_max_11")
     public String phone_number;
-
+    @Required
     public String position;
 
     @Required

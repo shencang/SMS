@@ -13,15 +13,15 @@ import java.util.List;
 public class UndergraduateStudent extends Model {
 
     @Required
-    @MaxSize(11)
+    @MaxSize(value = 11,message = "value_max_11")
     public String stu_id;
 
-    @MaxSize(8)
+    @MaxSize(value = 8,message = "value_max_8")
     public String name;
 
-    @MaxSize(11)
+    @MaxSize(value = 11,message = "value_max_11")
     public String phone_number;
-    @MaxSize(8)
+    @MaxSize(value = 8,message = "value_max_8")
     public String grade;
 
     @Required
@@ -30,11 +30,12 @@ public class UndergraduateStudent extends Model {
     @Email
     public String email;
 
-    @MaxSize(6)
+    @MaxSize(value = 6,message = "value_max_6_double")
     public double  stu_score;
 
-    @MaxSize(10)
+    @MaxSize(value = 10,message ="value_max_10_double" )
     public double stu_mom;
+
 
     @ManyToOne
     public Teacher myTeacher;

@@ -1,11 +1,10 @@
-22 12月 2018 13:54:09,110 INFO  ~ Starting D:\work_data\java_play\SMS\.
-22 12月 2018 13:54:09,489 INFO  ~ Module docviewer is available (D:\soft_work\play-1.5.1\modules\docviewer)
-22 12月 2018 13:54:09,490 INFO  ~ Module crud is available (D:\soft_work\play-1.5.1\modules\crud)
-22 12月 2018 13:54:09,491 INFO  ~ Module secure is available (D:\soft_work\play-1.5.1\modules\secure)
-22 12月 2018 13:54:10,262 WARN  ~ You're running Play! in DEV mode
-22 12月 2018 13:54:11,030 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
-22 12月 2018 13:54:15,419 INFO  ~ HikariPool-1 - Starting...
-22 12月 2018 13:54:15,442 INFO  ~ HikariPool-1 - Start completed.
-22 12月 2018 13:54:15,453 INFO  ~ Connected to jdbc:mysql://localhost:3306/sms?serverTimezone=UTC for default
-22 12月 2018 13:54:19,765 INFO  ~ Application 'SMS' is now started !
-22 12月 2018 14:02:29,262 INFO  ~ Restart: 2 classes changed (and HotSwap is not enabled)
+29 12月 2018 09:03:51,554 INFO  ~ Starting D:\work_data\java_play\SMS\.
+29 12月 2018 09:03:51,946 INFO  ~ Module docviewer is available (D:\soft_work\play-1.5.1\modules\docviewer)
+29 12月 2018 09:03:51,947 INFO  ~ Module crud is available (D:\soft_work\play-1.5.1\modules\crud)
+29 12月 2018 09:03:51,947 INFO  ~ Module secure is available (D:\soft_work\play-1.5.1\modules\secure)
+29 12月 2018 09:03:52,845 WARN  ~ You're running Play! in DEV mode
+29 12月 2018 09:03:53,637 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+29 12月 2018 09:04:08,175 INFO  ~ HikariPool-1 - Starting...
+29 12月 2018 09:04:08,205 INFO  ~ HikariPool-1 - Start completed.
+29 12月 2018 09:04:08,220 INFO  ~ Connected to jdbc:mysql://localhost:3306/sms?serverTimezone=UTC for default
+29 12月 2018 09:04:12,915 INFO  ~ Application 'SMS' is now started !
