@@ -40,6 +40,8 @@ public class UndergraduateStudent extends Model {
     @ManyToOne
     public Teacher myTeacher;
 
+    public boolean isAdmin;
+
     @ManyToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     @JoinTable(name = "co_id",joinColumns = @JoinColumn(name = "stu_id"),inverseJoinColumns = @JoinColumn(name = "co_id"))
     public List<Course> courseList;
@@ -66,6 +68,9 @@ public class UndergraduateStudent extends Model {
         this.email=email;
         this.stu_score=stu_score;
         this.stu_mom=stu_mom;
+    }
+    public static UndergraduateStudent connect(String tea_id, String passawd) {
+        return find("byStu_idAndPassword",tea_id , passawd).first();
     }
 
 }

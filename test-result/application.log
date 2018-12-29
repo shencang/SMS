@@ -8,3 +8,182 @@
 29 12月 2018 09:04:08,205 INFO  ~ HikariPool-1 - Start completed.
 29 12月 2018 09:04:08,220 INFO  ~ Connected to jdbc:mysql://localhost:3306/sms?serverTimezone=UTC for default
 29 12月 2018 09:04:12,915 INFO  ~ Application 'SMS' is now started !
+29 12月 2018 09:23:44,764 INFO  ~ Restart: 3 classes changed (and HotSwap is not enabled)
+29 12月 2018 09:49:06,395 INFO  ~ Restart: 5 classes changed (and HotSwap is not enabled)
+29 12月 2018 09:49:28,018 ERROR ~ 
+
+@7acjb9f85
+Internal Server Error (500) for request POST /login
+
+Execution exception (In /app/controllers/Security.java around line 20)
+NullPointerException occurred : Try to read tea_id on null object models.Teacher (controllers.Security.authenticate, line 20)
+
+play.exceptions.JavaExecutionException: Try to read tea_id on null object models.Teacher (controllers.Security.authenticate, line 20)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:492)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:474)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:441)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:164)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Try to read tea_id on null object models.Teacher (controllers.Security.authenticate, line 20)
+	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:219)
+	at controllers.Security.authenticate(Security.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at play.utils.Java.invokeStaticOrParent(Java.java:168)
+	at play.utils.Java.invokeChildOrStatic(Java.java:186)
+	at controllers.Secure$Security.invoke(Secure.java:202)
+	at controllers.Secure$Security.access$0(Secure.java:199)
+	at controllers.Secure.authenticate(Secure.java:75)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:543)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:480)
+	... 4 more
+29 12月 2018 09:49:56,526 INFO  ~ Restart: 1 classes changed (and HotSwap is not enabled)
+29 12月 2018 09:50:00,646 ERROR ~ 
+
+@7acjb9f86
+Internal Server Error (500) for request POST /login
+
+Execution exception (In /app/controllers/Security.java around line 20)
+NullPointerException occurred : Try to read tea_id on null object models.Teacher (controllers.Security.authenticate, line 20)
+
+play.exceptions.JavaExecutionException: Try to read tea_id on null object models.Teacher (controllers.Security.authenticate, line 20)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:492)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:474)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:441)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:164)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Try to read tea_id on null object models.Teacher (controllers.Security.authenticate, line 20)
+	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:219)
+	at controllers.Security.authenticate(Security.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at play.utils.Java.invokeStaticOrParent(Java.java:168)
+	at play.utils.Java.invokeChildOrStatic(Java.java:186)
+	at controllers.Secure$Security.invoke(Secure.java:202)
+	at controllers.Secure$Security.access$0(Secure.java:199)
+	at controllers.Secure.authenticate(Secure.java:75)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:543)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:480)
+	... 4 more
+29 12月 2018 09:52:21,847 INFO  ~ Restart: 1 classes changed (and HotSwap is not enabled)
+29 12月 2018 09:53:11,265 ERROR ~ 
+
+@7acjb9f88
+Internal Server Error (500) for request POST /teachers/domodifybatchregistration
+
+Execution exception (In /app/controllers/Teachers.java around line 31)
+NoSuchMethodError occurred : models.Student.(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
+
+play.exceptions.JavaExecutionException: models.Student.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:492)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:474)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:441)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:164)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NoSuchMethodError: models.Student.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
+	at controllers.Teachers.doModifybatchRegistration(Teachers.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:543)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:480)
+	... 4 more
+29 12月 2018 09:54:47,196 ERROR ~ 
+
+@7acjb9f89
+Internal Server Error (500) for request POST /teachers/domodifybatchregistration
+
+Execution exception (In /app/controllers/Teachers.java around line 31)
+NoSuchMethodError occurred : models.Student.(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
+
+play.exceptions.JavaExecutionException: models.Student.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:492)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:474)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:441)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:164)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NoSuchMethodError: models.Student.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
+	at controllers.Teachers.doModifybatchRegistration(Teachers.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:543)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:480)
+	... 4 more
+29 12月 2018 09:55:01,741 ERROR ~ 
+
+@7acjb9f8a
+Internal Server Error (500) for request POST /teachers/domodifybatchregistration
+
+Execution exception (In /app/controllers/Teachers.java around line 31)
+NoSuchMethodError occurred : models.Student.(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
+
+play.exceptions.JavaExecutionException: models.Student.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:492)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:474)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:441)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:164)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NoSuchMethodError: models.Student.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
+	at controllers.Teachers.doModifybatchRegistration(Teachers.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:543)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:480)
+	... 4 more
+29 12月 2018 10:00:20,588 ERROR ~ 
+
+@7acjb9f8j
+Internal Server Error (500) for request POST /teachers/domodifybatchregistration
+
+Execution exception (In /app/controllers/Teachers.java around line 31)
+NoSuchMethodError occurred : models.Student.(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
+
+play.exceptions.JavaExecutionException: models.Student.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:492)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:474)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:441)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:164)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NoSuchMethodError: models.Student.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
+	at controllers.Teachers.doModifybatchRegistration(Teachers.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:543)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:480)
+	... 4 more
+29 12月 2018 10:00:54,193 INFO  ~ Restart: 1 classes changed (and HotSwap is not enabled)
+29 12月 2018 10:02:18,242 INFO  ~ Restart: 1 classes changed (and HotSwap is not enabled)
+29 12月 2018 10:02:29,005 ERROR ~ 
+
+@7acjb9f8n
+Internal Server Error (500) for request POST /teachers/domodifybatchregistration
+
+Execution exception (In /app/controllers/Teachers.java around line 31)
+NoSuchMethodError occurred : models.Student.(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
+
+play.exceptions.JavaExecutionException: models.Student.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:492)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:474)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:441)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:164)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NoSuchMethodError: models.Student.<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
+	at controllers.Teachers.doModifybatchRegistration(Teachers.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:543)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:480)
+	... 4 more
+29 12月 2018 10:03:36,100 INFO  ~ Restart: 1 classes changed (and HotSwap is not enabled)

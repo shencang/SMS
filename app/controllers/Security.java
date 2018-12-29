@@ -1,6 +1,9 @@
 package controllers;
 
+import models.PostgraduateStudent;
+import models.Student;
 import models.Teacher;
+import models.UndergraduateStudent;
 
 public class Security extends Secure.Security {
 
@@ -14,12 +17,21 @@ public class Security extends Secure.Security {
 ////        return Teacher.connect(username,password)!=null;
 //    }
     static boolean authenticate(String username,String password){
+        Student student = Student.find("byStu_id",username).first();
+        Teacher teacher = Teacher.find("byTea_id",username).first();
+        if(teacher!=null ){
+            return Teacher.connect(username,password)!=null;
+        }else if(student!=null){
+            return Student.connect(username,password)!=null;
 
-        boolean sec= username!=null&&password!=null
-                &&username.equals("root")
-                && password.equals("123456789");
+        }else {
+            boolean sec= username!=null&&password!=null
+                    &&username.equals("root")
+                    && password.equals("123456789");
             session.put("currentUser", username);
             return sec;
+        }
+
 //        return Teacher.connect(username,password)!=null;
     }
     public static boolean check(String profile) {
