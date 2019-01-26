@@ -2,3 +2,5 @@
 24 1月 2019 22:21:13,177 INFO  ~ Module docviewer is available (D:\soft_work\play-1.5.1\modules\docviewer)
 24 1月 2019 22:21:13,178 INFO  ~ Module crud is available (D:\soft_work\play-1.5.1\modules\crud)
 24 1月 2019 22:21:13,180 INFO  ~ Module secure is available (D:\soft_work\play-1.5.1\modules\secure)
+24 1月 2019 22:21:15,780 WARN  ~ You're running Play! in DEV mode
+24 1月 2019 22:21:16,753 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
