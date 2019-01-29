@@ -6,7 +6,7 @@ import play.mvc.With;
 
 
 @With(Secure.class)
-@Check("studentNameModify")
+@Check("Modify")
 public class Courses extends CRUD {
 
     public static void  coursescenter(){

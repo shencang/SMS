@@ -4,7 +4,7 @@ import models.Student;
 import play.mvc.With;
 
 @With(Secure.class)
-@Check("studentNameModify")
+@Check("Modify")
 public class Students extends CRUD {
 
     public static void modifyName(String id){
