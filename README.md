@@ -13,7 +13,7 @@
 ##### play framework version 1.5.1
 ##### jdk version: 10.0
 #####python version: 3.6
-##### MySQL Version: 8.0（含有JDBC）
+##### MySQL Version: 8.0（JDBC）
 ### -------------------------------------------------------------------------------
 #### 效果展示：
 ##### 未登录首页：
