@@ -28,4 +28,4 @@
 ![image](https://github.com/shencang/SMS/blob/master/runphoto/登录界面.png)
 ##### 后台管理页面：
 ![image](https://github.com/shencang/SMS/blob/master/runphoto/管理后台.png)
-##### 其他见实际效果
+##### 其他见实际运行效果。
